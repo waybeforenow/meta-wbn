@@ -82,12 +82,17 @@ ALSA_SUPPORT = " \
     alsa-tools \
  "
 
+MODULAR_FRIEND = " \
+    modular-friend \
+ "
+
 IMAGE_INSTALL += " \
     ${DEV_EXTRAS} \
     ${EXTRA_TOOLS_INSTALL} \
     ${RPI_UTILS} \
     ${WIFI_SUPPORT} \
     ${ALSA_SUPPORT} \
+    ${MODULAR_FRIEND} \
 "
 
 do_deploy_append() {
